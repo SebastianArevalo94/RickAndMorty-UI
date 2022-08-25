@@ -40,13 +40,7 @@ function App() {
       setUrl(`https://rickandmortyapi.com/api/${category}/?page=1`);
     } else {
       setSearchStr(target.value);
-      if (category === "character") {
-        setUrl(`https://rickandmortyapi.com/api/character/?name=${searchStr}`);
-      } else if (category === "episode") {
-        setUrl(`https://rickandmortyapi.com/api/episode/?name=${searchStr}`);
-      } else if (category === "location") {
-        setUrl(`https://rickandmortyapi.com/api/location/?name=${searchStr}`);
-      }
+      setUrl(`https://rickandmortyapi.com/api/character/?name=${searchStr}`);
     }
   };
 
